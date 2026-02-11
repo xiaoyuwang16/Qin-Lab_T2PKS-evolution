@@ -21,5 +21,5 @@ KNN_THRESHOLD = 0.5
 PCA_COMPONENTS = 200 
 
 # Base directories
-BASE_DIR = Path("/yourpath/Qin-Lab_T2PKS-evolution/example")
+BASE_DIR = Path("/YOURPATH/Qin-Lab_T2PKS-evolution/example")
 OUTPUT_DIR = BASE_DIR / "output"
