@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # Window sizes for embedding
-WINDOW_SIZES = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 200, 250, 300]
+WINDOW_SIZES = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 200]
 
 # Color scheme for visualization
 COLOR_SCHEME = {
@@ -21,5 +21,5 @@ KNN_THRESHOLD = 0.5
 PCA_COMPONENTS = 200 
 
 # Base directories
-BASE_DIR = Path("/yourpath/MAAPE-main-KS/example")
+BASE_DIR = Path("/yourpath/Qin-Lab_T2PKS-evolution/example")
 OUTPUT_DIR = BASE_DIR / "output"
