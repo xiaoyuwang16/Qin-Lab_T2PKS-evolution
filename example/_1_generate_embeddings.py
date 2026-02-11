@@ -9,7 +9,7 @@ def main():
     
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     
-    fasta_path = BASE_DIR / "test.fasta"
+    fasta_path = BASE_DIR / "KS_all&outgroup.fasta"
     raw_embeddings_path = OUTPUT_DIR / "raw_embeddings.npy"
     normalized_embeddings_path = OUTPUT_DIR / "normalized_embeddings.npy"
     pca_embeddings_path = OUTPUT_DIR / "normalized_pca_embeddings.npy"
