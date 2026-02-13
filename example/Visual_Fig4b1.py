@@ -7,6 +7,7 @@ import matplotlib.patheffects as PathEffects
 import random
 from pathlib import Path
 import sys
+import constants 
 
 def main():
 
