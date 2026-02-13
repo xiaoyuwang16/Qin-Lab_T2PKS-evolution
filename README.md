@@ -67,6 +67,7 @@ pip install -r requirements.txt
 
 `/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:\
 ...\
+***
 ├── example/\
 │   ├── _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)\
 │   ├── _2_generate_paths.py\
