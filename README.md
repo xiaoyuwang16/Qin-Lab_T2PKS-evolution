@@ -92,7 +92,7 @@ KNN_K = 20: Sets the number of nearest neighbors for each node\
 KNN_THRESHOLD = 0.5: Defines the edge weight threshold
 
 5. PCA Parameters\
-PCA_COMPONENTS = 110: Sets the number of dimensions for dimensionality reduction, can't be too small for retaining key feature information
+PCA_COMPONENTS = 200: Sets the number of dimensions for dimensionality reduction, can't be too small for retaining key feature information
 
 ## Usage
 ```python
