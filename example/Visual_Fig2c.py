@@ -8,6 +8,7 @@ from sklearn.cluster import AgglomerativeClustering
 import matplotlib.colors as mcolors
 from matplotlib.colors import LinearSegmentedColormap
 from pathlib import Path
+import constants 
 
 def load_embeddings(file_path):
     return np.load(file_path)
