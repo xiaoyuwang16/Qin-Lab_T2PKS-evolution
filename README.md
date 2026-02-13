@@ -32,11 +32,11 @@ Determines edge directions between sequence pairs\
 Calculates edge weights based on sequence relationships\
 Generates a weighted, directed edge list
 
-4. Builds a K-nearest neighbor (KNN) similarity network\
+4. Builds a K-nearest neighbor (KNN) similarity network
 
 5. Visualization\
 Maps previously calculated directions and weights onto KNN edges\
-Generates the final MAAPE (Molecular Assembly And Protein Engineering) network\
+Generates the final MAAPE (Molecular Assembly And Protein Engineering) network
 
 
 ## MAAPE workflow diagram
