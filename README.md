@@ -63,8 +63,8 @@ typing-extensions
 
 ## Installation
 ```bash
-git clone https://github.com/xiaoyuwang16/MAAPE.git
-cd MAAPE
+git clone https://github.com/xiaoyuwang16/Qin-Lab_T2PKS-evolution.git
+cd /content/Qin-Lab_T2PKS-evolution
 pip install -r requirements.txt
 ```
 ## Contents and files
@@ -102,7 +102,7 @@ PCA_COMPONENTS = 200: Sets the number of dimensions for dimensionality reduction
 ```python
 import os
 import sys
-maape_path = '/path/to/MAAPE' 
+maape_path = '/path/to/Qin-Lab_T2PKS-evolution' 
 sys.path.append(maape_path)
 
 import importlib.util
@@ -114,34 +114,27 @@ def import_file(file_path):
     return module
 
 # 1. Generate Embeddings
-script = import_file('/path/to/MAAPE/example/_1_generate_embeddings.py')
+script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_1_generate_embeddings.py')
 generate_embeddings = script.main
 generate_embeddings()
-
+```
+This step embedding FASTA sequences using ESM-2, followed by normalization and dimensionality reduction via PCA. The resulting file, normalized_pca_embeddings.npy, is stored in the output directory. This file has already been uploaded to the repository.
+```
 # 2. Generate Paths
-script = import_file('/path/to/MAAPE/example/_2_generate_paths.py')
+script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_2_generate_paths.py')
 generate_paths = script.main
 generate_paths()
 
 # 3. Calculate Weights and Edges
-script = import_file('/path/to/MAAPE/example/_3_calculate_weights_and_edges.py')
+script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_3_calculate_weights_and_edges.py')
 calculate_weights = script.main
 calculate_weights()
 
 # 4. Build and Analyze Graph
-script = import_file('/path/to/MAAPE/example/_4_build_and_analyze_graph.py')
+script = import_file('/path/to/MAAPE/Qin-Lab_T2PKS-evolution/_4_build_and_analyze_graph.py')
 build_and_analyze = script.main
 build_and_analyze()
 
-# 5. Visualize Results
-script = import_file('/path/to/MAAPE/example/_5_visualize_maape.py')
-maape_visual = script.main
-maape_visual()
-
-# 6. Visualize Aggregated Results
-script = import_file('/path/to/MAAPE/example/_6_aggregated_visualization.py')
-aggregated_maape = script.main
-aggregated_maape()
 ```
 Step 5 & 6 will generate MAAPE graph and its condensed version.
 
