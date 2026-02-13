@@ -118,29 +118,30 @@ script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_1_generate_embed
 generate_embeddings = script.main
 generate_embeddings()
 ```
-This step embedding FASTA sequences using ESM-2, followed by normalization and dimensionality reduction via PCA. The resulting file,  `/path/to/Qin-Lab_T2PKS-evolution/example/output/normalized_pca_embeddings.npy`, is stored in the output directory. This file has already been uploaded to the repository.
++ This step embedding FASTA sequences using ESM-2, followed by normalization and dimensionality reduction via PCA. The resulting file,  `/path/to/Qin-Lab_T2PKS-evolution/example/output/normalized_pca_embeddings.npy`, is stored in the output directory. This file has already been uploaded to the repository.
 ```
 # 2. Generate Paths
 script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_2_generate_paths.py')
 generate_paths = script.main
 generate_paths()
 ```
-This step will generate 2 files: `/path/to/Qin-Lab_T2PKS-evolution/example/output/processed_paths.pkl` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/search_results.pkl`.
++ This step generates 2 files: `/path/to/Qin-Lab_T2PKS-evolution/example/output/processed_paths.pkl` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/search_results.pkl`.
 ```
 # 3. Calculate Weights and Edges
 script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_3_calculate_weights_and_edges.py')
 calculate_weights = script.main
 calculate_weights()
-
+```
++ This step will generate `/path/to/Qin-Lab_T2PKS-evolution/example/output/all_edges_data.pkl `.
+```
 # 4. Build and Analyze Graph
 script = import_file('/path/to/MAAPE/Qin-Lab_T2PKS-evolution/_4_build_and_analyze_graph.py')
 build_and_analyze = script.main
 build_and_analyze()
-
 ```
-Step 5 & 6 will generate MAAPE graph and its condensed version.
++ This step generates `/path/to/Qin-Lab_T2PKS-evolution/example/output/knn_graph_edges.txt` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/new_edge_weights_pca.pkl`\
 
-MAAPE graph of ‘/path/to/MAAPE/example/test.fasta’:
-![下载](https://github.com/user-attachments/assets/5e1489d7-51e0-4432-8167-75ebf98544d8)
-Condensed graph:
-![下载 (1)](https://github.com/user-attachments/assets/dcc2c80d-96a2-4f7e-b503-9e086225395f)
++ The amount of generated edges is huge in step 3, in Step 5 we screened the top 20% high-weighted edges for future analysis, generating `/path/to/Qin-Lab_T2PKS-evolution/example/outputselected_edges_data.pkl` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/selected_edges.pkl`.\
++ In step 6 we applied sparse encoding to the GO classifications predicted by DeepFRI. This converts the functional annotations of each sequence into vectors, facilitating the calculation of functional similarity.\
++ You are now ready to run the Visual_*.py scripts.
+
