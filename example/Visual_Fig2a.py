@@ -10,6 +10,7 @@ import matplotlib.patches as mpatches
 import matplotlib.patheffects as PathEffects
 from matplotlib.patches import FancyArrowPatch
 from pathlib import Path
+import constants 
 
 def load_embeddings(file_path):
     if not file_path.exists():
