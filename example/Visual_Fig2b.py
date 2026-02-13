@@ -9,7 +9,7 @@ import pickle
 from collections import defaultdict
 from sklearn.cluster import AgglomerativeClustering
 from pathlib import Path
-
+import constants 
 
 def load_embeddings(file_path):
     if not file_path.exists():
