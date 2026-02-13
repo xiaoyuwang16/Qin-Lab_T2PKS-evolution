@@ -36,12 +36,13 @@ Generates a weighted, directed edge list
 
 5. Visualization\
 Maps previously calculated directions and weights onto KNN edges\
-Generates the final MAAPE (Molecular Assembly And Protein Engineering) network
+Generates the final MAAPE (Molecular Assembly And Protein Engineering) network\
 
 
+## MAAPE workflow diagram
 ![graphical](https://github.com/user-attachments/assets/77610421-6d2d-44fb-bcb0-4944b8586c5a)
 
-MAAPE algorithm:
+## MAAPE algorithm
 ![MAAPE算法示意图](https://github.com/user-attachments/assets/b36e147d-d28e-4784-9292-de9e3ae33e7a)
 
 ##  Requirements
@@ -64,19 +65,19 @@ pip install -r requirements.txt
 ```
 ## Contents and introduction of files
 
-`/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:
-...
-├── example/
-│   ├── _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)
-│   ├── _2_generate_paths.py
-│   └── ...
-│   └── KS_all&outgroup.fasta           # the KS sequence, both KSα and KSβ
-│   └── converted_thresholds_pca.npy    # A file containing sub-vector similarity thresholds corresponding to each window size. The methodology for calculating these thresholds is detailed in the MAAPE article.
-│   └── order_index.txt                 # Index and protein classification (outgroup/KSα/KSβ) corresponding to `KS_all&outgroup.fasta`, used for color coding during visualization.
-│   └── sequence_index.txt              # Index and protein names (ie. ksa_+ABXA-BE-24566B_13) corresponding to `KS_all&outgroup.fasta`.
-│   └── Visual_Fig2a.py                 # visualizing scripts for each figure in our paper.
-│   └── ...
-...
+`/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:\
+...\
+├── example/\
+│   ├── _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)\
+│   ├── _2_generate_paths.py\
+│   └── ...\
+│   └── KS_all&outgroup.fasta           # the KS sequence, both KSα and KSβ\
+│   └── converted_thresholds_pca.npy    # A file containing sub-vector similarity thresholds corresponding to each window size. The methodology for calculating these thresholds is detailed in the MAAPE article.\
+│   └── order_index.txt                 # Index and protein classification (outgroup/KSα/KSβ) corresponding to `KS_all&outgroup.fasta`, used for color coding during visualization.\
+│   └── sequence_index.txt              # Index and protein names (ie. ksa_+ABXA-BE-24566B_13) corresponding to `KS_all&outgroup.fasta`.\
+│   └── Visual_Fig2a.py                 # visualizing scripts for each figure in our paper.\
+│   └── ...\
+...\
 
 
 
