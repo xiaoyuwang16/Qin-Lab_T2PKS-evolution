@@ -2,7 +2,7 @@ import sys
 import pickle
 import random
 from pathlib import Path
-
+import constants 
 import networkx as nx
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
