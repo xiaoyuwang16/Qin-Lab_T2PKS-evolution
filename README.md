@@ -8,9 +8,9 @@ The biosynthesis of bacterial aromatic polyketide polyketides (type II polyketid
 In this study, we employed MAAPE (Modular Assembly Analysis of Protein Embeddings), a recently developed algorithm based on large protein language models (PLMs), to glean insights into the evolution process of KSs and CLFs. Our findings indicated the evolutionary history of KS and CLF domains from bacterial T2PKSs and identified a shared ancestral cluster (Cluster A), supporting a common origin. Despite structural homology, KSs and CLFs followed distinct evolutionary paths, shaped by coevolution and early horizontal gene transfer (HGT).
 
 ## Features
-- PLM Embeddings: Utilization of ESM-2 (Evolutionary Scale Modeling) to extract high-dimensional protein features.
-- MAAPE Algorithm: Application of the Modular Assembly Analysis of Protein Embeddings to reconstruct evolutionary trajectories.
-- Functional Prediction: Integration of DeepFRI (Deep Functional Residue Identification) to correlate evolutionary clusters with GO molecular functions.
+- PLM Embeddings: Utilization of ESM-2 (Evolutionary Scale Modeling) to extract high-dimensional protein features.\
+- MAAPE Algorithm: Application of the Modular Assembly Analysis of Protein Embeddings to reconstruct evolutionary trajectories.\
+- Functional Prediction: Integration of DeepFRI (Deep Functional Residue Identification) to correlate evolutionary clusters with GO molecular functions.\
 - Visualization: Scripts for generating phylogenetic trees, similarity heatmaps, and co-evolutionary network graphs.
 
 ## Introduction of MAAPE
@@ -64,7 +64,25 @@ pip install -r requirements.txt
 ```
 ## Contents and introduction of files
 
-`/path/to/MAAPE/example/test.fasta`
+`/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:
+...
+├── example/
+│   ├── _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)
+│   ├── _2_generate_paths.py
+│   └── ...
+│   └── KS_all&outgroup.fasta           # the KS sequence, both KSα and KSβ
+│   └── converted_thresholds_pca.npy    # A file containing sub-vector similarity thresholds corresponding to each window size. The methodology for calculating these thresholds is detailed in the MAAPE article.
+│   └── order_index.txt                 # Index and protein classification (outgroup/KSα/KSβ) corresponding to `KS_all&outgroup.fasta`, used for color coding during visualization.
+│   └── sequence_index.txt              # Index and protein names (ie. ksa_+ABXA-BE-24566B_13) corresponding to `KS_all&outgroup.fasta`.
+│   └── Visual_Fig2a.py                 # visualizing scripts for each figure in our paper.
+│   └── ...
+...
+
+
+
+
+
+ 
 
 
 
