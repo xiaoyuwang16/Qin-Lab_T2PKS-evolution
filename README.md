@@ -73,7 +73,7 @@ pip install -r requirements.txt
 +  order_index.txt                 # Index and protein classification (outgroup/KSα/KSβ) corresponding to `KS_all&outgroup.fasta`, used for color coding during visualization.
 +  sequence_index.txt              # Index and protein names (ie. ksa_+ABXA-BE-24566B_13) corresponding to `KS_all&outgroup.fasta`.
 +  DeepFRI function predictions.csv # Result file generating from DeepFRI.
-+  Visual_Fig2a.py ...             # visualizing scripts for each figure in our paper.\
++  Visual_Fig2a.py ...             # visualizing scripts for each figure in our paper.
 
  `/path/to/Qin-Lab_T2PKS-evolution/src ` Contains core MAAPE package modules.\
  `/path/to/Qin-Lab_T2PKS-evolution/constants.py ` \
