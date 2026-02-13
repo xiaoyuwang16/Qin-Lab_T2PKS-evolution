@@ -9,6 +9,7 @@ import matplotlib.patheffects as PathEffects
 import re
 import sys
 from pathlib import Path
+import constants 
 
 def load_embeddings(file_path):
     if not file_path.exists():
