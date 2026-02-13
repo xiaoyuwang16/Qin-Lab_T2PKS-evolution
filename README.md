@@ -1,7 +1,20 @@
-# Modular Assembly Analysis of Protein Embeddings (MAAPE) algorithm
+# The Evolutionary Processes of Bacterial Aromatic Polyketide Ketosynthases
 
-A novel algorithm that integrates a k-nearest neighbour (KNN) similarity network with co-occurrence matrix analysis to extract evolutionary insights from protein language model (PLM) embeddings.
-This code implements a six-step pipeline for analyzing protein sequence evolution relationships and constructing their similarity networks:
+This repository contains the code and data analysis scripts associated with the manuscript: "The evolutionary processes of bacterial aromatic polyketide ketosynthases".
+
+## Abstract
+The biosynthesis of bacterial aromatic polyketide polyketides (type II polyketides, T2PKs) employs a single set of catalysts (ketosynthases, KSs or KSα, with chain length factors, CLFs or KSβ) and iteratively assembles a carbon backbone with precise chain length control.
+
+In this study, we employed MAAPE (Modular Assembly Analysis of Protein Embeddings), a recently developed algorithm based on large protein language models (PLMs), to glean insights into the evolution process of KSs and CLFs. Our findings indicated the evolutionary history of KS and CLF domains from bacterial T2PKSs and identified a shared ancestral cluster (Cluster A), supporting a common origin. Despite structural homology, KSs and CLFs followed distinct evolutionary paths, shaped by coevolution and early horizontal gene transfer (HGT).
+
+## Features
+- PLM Embeddings: Utilization of ESM-2 (Evolutionary Scale Modeling) to extract high-dimensional protein features.
+- MAAPE Algorithm: Application of the Modular Assembly Analysis of Protein Embeddings to reconstruct evolutionary trajectories.
+- Functional Prediction: Integration of DeepFRI (Deep Functional Residue Identification) to correlate evolutionary clusters with GO molecular functions.
+- Visualization: Scripts for generating phylogenetic trees, similarity heatmaps, and co-evolutionary network graphs.
+
+## Introduction of MAAPE
+Implements a five-step pipeline for analyzing protein sequence evolution relationships and constructing their similarity networks:
 
 1. Embedding Generation\
 Processes input protein sequences\
@@ -24,19 +37,6 @@ Generates a weighted, directed edge list
 5. Visualization\
 Maps previously calculated directions and weights onto KNN edges\
 Generates the final MAAPE (Molecular Assembly And Protein Engineering) network
-
-6. Aggregated visualization\
-Generates a nodes clustered and edge bundled version of MAAPE graph, to gain condensed version of protein evolution relationships.
-
-
-## Features
-- ESM2-based protein sequence embedding
-- Multi-scale sliding window analysis
-- Co-occurrence matrix construction
-- KNN similarity network construction
-- Evolutionary direction detection
-- Visualization of protein evolutionary relationships
-
 
 
 ![graphical](https://github.com/user-attachments/assets/77610421-6d2d-44fb-bcb0-4944b8586c5a)
@@ -62,6 +62,19 @@ git clone https://github.com/xiaoyuwang16/MAAPE.git
 cd MAAPE
 pip install -r requirements.txt
 ```
+## Contents and introduction of files
+
+`/path/to/MAAPE/example/test.fasta`
+
+
+
+
+
+
+
+
+
+
 
 ## Data Format Requirements
 
