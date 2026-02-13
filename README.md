@@ -78,9 +78,9 @@ root
 
 `/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:\
 ...\
-├── example/\
-│   ├── _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)\
-│   ├── _2_generate_paths.py\
+|── example/\
+|   └── _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)\
+│   └── _2_generate_paths.py\
 │   └── ...\
 │   └── KS_all&outgroup.fasta           # the KS sequence, both KSα and KSβ\
 │   └── converted_thresholds_pca.npy    # A file containing sub-vector similarity thresholds corresponding to each window size. The methodology for calculating these thresholds is detailed in the MAAPE article.\
