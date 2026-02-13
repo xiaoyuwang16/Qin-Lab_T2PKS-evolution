@@ -63,7 +63,7 @@ git clone https://github.com/xiaoyuwang16/MAAPE.git
 cd MAAPE
 pip install -r requirements.txt
 ```
-## Contents and introduction of files
+## Contents and files
 
 `/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:\
 
@@ -76,45 +76,10 @@ pip install -r requirements.txt
 +  Visual_Fig2a.py ...             # visualizing scripts for each figure in our paper.\
 
  `/path/to/Qin-Lab_T2PKS-evolution/src ` Contains core MAAPE package modules.\
- `/path/to/Qin-Lab_T2PKS-evolution/constants.py ` # This file contains global parameters and path settings for the analysis pipeline. **Before running the scripts, you must update the `BASE_DIR` to match your local environment.**
-All other scientific parameters (Window sizes, KNN, PCA) are pre-configured based on the methodology described in our manuscript for KS domain processing.
-
- 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-## Data Format Requirements
-
-Input files:\
-1. Protein sequences in FASTA format, there's a `/path/to/MAAPE/example/test.fasta` in example folder which contains 110 Rubisco protein sequences\
-2. Order index file: `/path/to/MAAPE/example/order_index.txt`
-   Contains sequence indices and their corresponding protein categories. This information is used for node coloring in the visualization.
-3. Similarity threshold file for determining whether sub-vectors of different window sizes are equivalent：`/path/to/MAAPE/example/converted_thresholds_pca.npy`，this file is derived from threshold_window_size_5 = 0.00001, with thresholds for other window sizes converted proportionally using square root scaling.
-   
-Output:\
-Embedding files (.npy), there is a embedding file already L2 normalized and reduced to 110 dimensions: `/path/to/MAAPE/example/output/normalized_pca_embeddings.npy`\
-Path information (.pkl)\
-Edge weights and graph structure (.pkl, .txt)\
-Visualization plots
-
-## Configuration
-Settings can be changed at `/path/to/MAAPE/constant.py`\
-These are parameters:
-
+ `/path/to/Qin-Lab_T2PKS-evolution/constants.py ` \
+ This file contains global parameters and path settings for the analysis pipeline. \
+ **Before running the scripts, you must update the `BASE_DIR` to match your local environment.**\
+All other scientific parameters (Window sizes, KNN, PCA) are pre-configured based on the methodology described in our manuscript for KS domain processing.\
 1. WINDOW_SIZES\
 Used for sliding window analysis for sequence embedding, set multiple window sizes to capture sequence features at different scales.
 
@@ -128,12 +93,6 @@ KNN_THRESHOLD = 0.5: Defines the edge weight threshold
 
 5. PCA Parameters\
 PCA_COMPONENTS = 110: Sets the number of dimensions for dimensionality reduction, can't be too small for retaining key feature information
-
-6. Directory Settings\
-BASE_DIR: Sets the base working directory\
-OUTPUT_DIR: Sets the output directory
-
-
 
 ## Usage
 ```python
