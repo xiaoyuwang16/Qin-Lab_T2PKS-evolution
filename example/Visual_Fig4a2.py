@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import networkx as nx
 from pathlib import Path
+import constants 
 
 
 def get_node_color(node):
