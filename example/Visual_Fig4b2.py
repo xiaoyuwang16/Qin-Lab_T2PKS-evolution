@@ -8,6 +8,7 @@ from matplotlib.patches import Arc
 import random
 from pathlib import Path
 import sys
+import constants 
 
 def main():
 
