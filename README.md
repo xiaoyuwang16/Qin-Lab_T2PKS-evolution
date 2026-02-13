@@ -118,13 +118,15 @@ script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_1_generate_embed
 generate_embeddings = script.main
 generate_embeddings()
 ```
-This step embedding FASTA sequences using ESM-2, followed by normalization and dimensionality reduction via PCA. The resulting file, normalized_pca_embeddings.npy, is stored in the output directory. This file has already been uploaded to the repository.
+This step embedding FASTA sequences using ESM-2, followed by normalization and dimensionality reduction via PCA. The resulting file,  `/path/to/Qin-Lab_T2PKS-evolution/example/output/normalized_pca_embeddings.npy`, is stored in the output directory. This file has already been uploaded to the repository.
 ```
 # 2. Generate Paths
 script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_2_generate_paths.py')
 generate_paths = script.main
 generate_paths()
-
+```
+This step will generate 2 files: `/path/to/Qin-Lab_T2PKS-evolution/example/output/processed_paths.pkl` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/search_results.pkl`.
+```
 # 3. Calculate Weights and Edges
 script = import_file('/path/to/Qin-Lab_T2PKS-evolution/example/_3_calculate_weights_and_edges.py')
 calculate_weights = script.main
