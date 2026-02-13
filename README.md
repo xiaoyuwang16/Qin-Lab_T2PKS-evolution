@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18631852.svg)](https://doi.org/10.5281/zenodo.18631852)
 # The Evolutionary Processes of Bacterial Aromatic Polyketide Ketosynthases
 
 This repository contains the code and data analysis scripts associated with the manuscript: "The evolutionary processes of bacterial aromatic polyketide ketosynthases".
