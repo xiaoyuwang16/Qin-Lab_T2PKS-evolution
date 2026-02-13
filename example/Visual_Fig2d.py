@@ -6,6 +6,7 @@ import seaborn as sns
 import pandas as pd
 from scipy import stats
 from pathlib import Path
+import constants 
 
 def load_embeddings(file_path):
     if not file_path.exists():
