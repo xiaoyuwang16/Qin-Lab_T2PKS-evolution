@@ -45,6 +45,10 @@ Generates the final MAAPE (Molecular Assembly And Protein Engineering) network
 ## MAAPE algorithm
 ![MAAPE算法示意图](https://github.com/user-attachments/assets/b36e147d-d28e-4784-9292-de9e3ae33e7a)
 
+## 166 pairs of structurally analogous bacterial KS-CLF proteins and a Staphylococcus aureus FABF
+<img width="4000" height="2250" alt="Figure-1" src="https://github.com/user-attachments/assets/cfe8b280-7c61-4bd3-99d6-e805b7855f83" />
+
+
 ##  Requirements
 torch,
 transformers,
@@ -65,7 +69,7 @@ pip install -r requirements.txt
 ```
 ## Contents and files
 
-`/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:\
+`/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:
 
 + _1_generate_embeddings.py       # Data processing pipeline code (6 files prefixed with _number_)
 +  KS_all&outgroup.fasta           # the KS sequence, both KSα and KSβ
@@ -79,7 +83,7 @@ pip install -r requirements.txt
  `/path/to/Qin-Lab_T2PKS-evolution/constants.py ` \
  This file contains global parameters and path settings for the analysis pipeline. \
  **Before running the scripts, you must update the `BASE_DIR` to match your local environment.**\
-All other scientific parameters (Window sizes, KNN, PCA) are pre-configured based on the methodology described in our manuscript for KS domain processing.\
+All other scientific parameters (Window sizes, KNN, PCA) are pre-configured based on the methodology described in our manuscript for KS domain processing.
 1. WINDOW_SIZES\
 Used for sliding window analysis for sequence embedding, set multiple window sizes to capture sequence features at different scales.
 
