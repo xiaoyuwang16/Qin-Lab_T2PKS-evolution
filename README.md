@@ -141,7 +141,7 @@ build_and_analyze()
 ```
 + This step generates `/path/to/Qin-Lab_T2PKS-evolution/example/output/knn_graph_edges.txt` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/new_edge_weights_pca.pkl`
 
-+ The amount of generated edges is huge in step 3, in Step 5 we screened the top 20% high-weighted edges for future analysis, generating `/path/to/Qin-Lab_T2PKS-evolution/example/outputselected_edges_data.pkl` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/selected_edges.pkl`.
++ The amount of generated edges is huge in step 3, in Step 5 we screened the top 20% high-weighted edges for future analysis, generating `/path/to/Qin-Lab_T2PKS-evolution/example/output/selected_edges_data.pkl` & `/path/to/Qin-Lab_T2PKS-evolution/example/output/selected_edges.pkl`.
 + In step 6 we applied sparse encoding to the GO classifications predicted by DeepFRI. This converts the functional annotations of each sequence into vectors, facilitating the calculation of functional similarity.
 + You are now ready to run the Visual_*.py scripts.
 <img width="4000" height="2250" alt="Figure-2" src="https://github.com/user-attachments/assets/754843d9-7730-4638-b05d-e72fe85f6057" />
