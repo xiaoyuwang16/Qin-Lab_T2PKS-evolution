@@ -67,7 +67,7 @@ git clone https://github.com/xiaoyuwang16/Qin-Lab_T2PKS-evolution.git
 cd /content/Qin-Lab_T2PKS-evolution
 pip install -r requirements.txt
 ```
-## Contents and files
+## Contents and Data availability
 
 `/path/to/Qin-Lab_T2PKS-evolution/example` Contains the script & KS data used in our analysis:
 
@@ -147,6 +147,16 @@ build_and_analyze()
 <img width="4000" height="2250" alt="Figure-2" src="https://github.com/user-attachments/assets/754843d9-7730-4638-b05d-e72fe85f6057" />
 <img width="4000" height="2250" alt="Figure-3" src="https://github.com/user-attachments/assets/7811d014-1b21-4d31-9858-3cee1e8cb900" />
 <img width="4000" height="2250" alt="Figure-4" src="https://github.com/user-attachments/assets/a6c132a8-c230-4ea5-b9ce-573df69f1b67" />
+
+## Citation
+For the MAAPE algorithm, please cite:\
+
+Wang, X., Zhang, H., Huang, J., & Qin, Z. (2025). MAAPE: A Tool for Modular Evolution Analysis of Protein Embedding. Digital Discovery. DOI: 10.1039/D5DD00009B\
+
+For the DeepFRI tool used for functional prediction, please cite:\
+
+Gligorijević, V., Renfrew, P.D., Kosciolek, T. et al. Structure-based protein function prediction using graph convolutional networks. Nat Commun 12, 3168 (2021). https://doi.org/10.1038/s41467-021-23303-9
+
 
 
 
